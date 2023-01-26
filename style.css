@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap'); 
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #242A66;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    color: white;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+form{
+    width: 80%;
+    margin-inline: auto;
+}
+.search{
+    display: block;
+    width: 90%;
+    background: #422B79;
+    border: 0;
+    padding: 1rem;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+    margin: 2rem auto;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+.search:focus{
+    outline: 0;
+}
+.search::placeholder{
+    color: #ddd;
+    font-family: inherit;
+}
+.search-result{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 90%;
+    background: #422B79;
+    border-radius: 15px;
+    padding: 2.2rem;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+    margin: auto;
+}
+.search_details{
+    max-width: 800px;
+}
+.search_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 10px solid #242A66;
+    margin-right: 2rem;
+    background-color: white;
+}
+.name{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+ 
+}
+.activity{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-block: 1.5rem;
+}
+.activity > *{
+    margin-right: 2rem;
+}
+.activity span{
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-left: 0.2rem;
+}
+
+.box{
+    display: inline-block;
+    background: #242A66;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+@media (max-width: 500px) {
+    .search-result{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .search_img{
+        margin-right: 0;
+    }
+}
